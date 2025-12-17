@@ -1,6 +1,6 @@
 // src/pages/chat/index.tsx
-import React, { useState, useRef, useEffect } from 'react';
 import Layout from '@theme/Layout';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './chat.module.css';
 
 type Message = {
@@ -51,7 +51,7 @@ export default function Chat(): React.ReactElement {
 
     try {
       // ✅ FIXED: Call backend API with correct schema
-      const response = await fetch('http://localhost:8000/chat', {
+      const response = await fetch('https://ai-and-robot-book3-backend.onrender.com/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
