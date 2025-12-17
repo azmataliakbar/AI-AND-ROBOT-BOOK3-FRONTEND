@@ -1,0 +1,26 @@
+cd C:\Users\WWW.SZLAIWIIT.COM\specify_plus\frontend
+
+@"
+# Environment variables - NEVER COMMIT!
+.env
+.env.local
+.env.production
+
+# Dependencies
+node_modules/
+
+# Build
+build/
+.docusaurus/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+"@ | Out-File -FilePath .gitignore -Encoding UTF8
