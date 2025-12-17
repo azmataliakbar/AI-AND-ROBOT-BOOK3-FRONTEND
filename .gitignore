@@ -1,6 +1,4 @@
-cd C:\Users\WWW.SZLAIWIIT.COM\specify_plus\frontend
 
-@"
 # Environment variables - NEVER COMMIT!
 .env
 .env.local
@@ -23,4 +21,3 @@ build/
 # OS
 .DS_Store
 Thumbs.db
-"@ | Out-File -FilePath .gitignore -Encoding UTF8
